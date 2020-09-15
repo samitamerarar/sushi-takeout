@@ -1,6 +1,6 @@
 # Sushi Takeout
 
-Realtime sushi order tracker using EJS, NodeJS, MongoDB, Socket.IO and more.
+Realtime sushi orders tracker using EJS, NodeJS, MongoDB, Socket.IO and more.
 
 ## Available
 
