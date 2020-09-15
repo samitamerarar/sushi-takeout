@@ -1,7 +1,7 @@
 {
-  "name": "realtime-sushi",
+  "name": "sushi-takeout",
   "version": "1.0.0",
-  "description": "Realtime takeout sushi app",
+  "description": "",
   "main": "index.js",
   "author": "Sami Arar",
   "scripts": {
@@ -9,7 +9,8 @@
     "dev": "nodemon server.js",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "heroku-postbuild": "npm run production"
   },
   "license": "MIT",
   "dependencies": {
