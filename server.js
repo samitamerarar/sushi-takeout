@@ -39,11 +39,11 @@ app.set("eventEmitter", eventEmitter);
 // Session config
 app.use(
   session({
-    secret: process.env.COOKIE_SECRET,
+    secret: "somevalue",
     resave: false,
     store: mongoStore,
     saveUninitialized: false,
-    cookie: { maxAge: 1000 * 60 * 60 * 24 }, // 24 hour
+    cookie: { maxAge: 1000 * 60 * 60 * 1 }, // 1 hour
   })
 );
 
