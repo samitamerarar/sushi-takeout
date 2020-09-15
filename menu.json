@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a1"
+  },
+  "name": "Salmon Nigiri",
+  "image": "nigiri_salmon.png",
+  "price": "3.95",
+  "size": "2pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a2"
+  },
+  "name": "Tuna Nigiri",
+  "image": "nigiri_tuna.png",
+  "price": "3.95",
+  "size": "2pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a3"
+  },
+  "name": "Shrimp Nigiri",
+  "image": "nigiri_shrimp.png",
+  "price": "3.95",
+  "size": "2pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a4"
+  },
+  "name": "Tamago Nigiri",
+  "image": "nigiri_tamago.png",
+  "price": "3.95",
+  "size": "2pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a5"
+  },
+  "name": "Deluxe Maki",
+  "image": "futomaki_1.png",
+  "price": "7.95",
+  "size": "4pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a6"
+  },
+  "name": "Rainbow Maki",
+  "image": "futomaki_2.png",
+  "price": "7.95",
+  "size": "4pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a7"
+  },
+  "name": "Gunkan Maki",
+  "image": "gunkan.png",
+  "price": "3.95",
+  "size": "2pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a8"
+  },
+  "name": "Salmon Sashimi",
+  "image": "sashimi_salmon.png",
+  "price": "4.95",
+  "size": "4pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730a9"
+  },
+  "name": "Hosomaki",
+  "image": "hosomaki.png",
+  "price": "3.45",
+  "size": "3pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730aa"
+  },
+  "name": "Uromaki",
+  "image": "uromaki.png",
+  "price": "3.45",
+  "size": "3pcs"
+},{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd730ab"
+  },
+  "name": "Temaki",
+  "image": "temaki.png",
+  "price": "6.95",
+  "size": "1pc"
+}]
