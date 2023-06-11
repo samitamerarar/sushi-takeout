@@ -13,8 +13,8 @@ const passport = require("passport");
 const Emitter = require("events");
 
 // Database connection
-const url =
-  "mongodb+srv://sami:admin123@cluster-sushi.lpwta.mongodb.net/sushi?retryWrites=true&w=majority";
+// "mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority";
+const url = process.env.MONGODB_URI;
 mongoose.connect(url, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 

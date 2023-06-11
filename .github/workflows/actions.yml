@@ -1,0 +1,28 @@
+---
+name: Pull from Server
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  pull-on-server:
+    name: Pull on Server
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo '${{ secrets.SERVER1_PRIVATE_KEY }}' > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER1_SSH_HOST }} > ~/.ssh/known_hosts
+      - name: Connect and Pull
+        run:
+          ssh ${{ secrets.SERVER1_SSH_USER }}@${{ secrets.SERVER1_SSH_HOST }} "cd ${{ secrets.SERVER1_WORK_DIR }} &&
+          git checkout main && git pull &&
+          rm -f .env && echo -e 'MONGODB_URI=${{ secrets.MONGODB_URI }}\n' >> .env && exit"
+      - name: Connect and run docker
+        run:
+          ssh ${{ secrets.SERVER1_SSH_USER }}@${{ secrets.SERVER1_SSH_HOST }} "cd ${{ secrets.SERVER1_WORK_DIR }} &&
+          sudo docker-compose up -d --no-deps --build server && exit"
+      - name: Cleanup
+        run: rm -rf ~/.ssh

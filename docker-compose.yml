@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  server:
+    ports:
+      - 5335:3300
+    container_name: sushitakeout
+    networks:
+      - nginxproxymanager_default
+    restart: always
+    build: .
+
+networks:
+  nginxproxymanager_default:
+    external: true
