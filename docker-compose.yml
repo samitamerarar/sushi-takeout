@@ -6,10 +6,10 @@ services:
       - 5335:3300
     container_name: sushitakeout
     networks:
-      - nginxproxymanager_default
+      - nginx-proxy-manager_default
     restart: always
     build: .
 
 networks:
-  nginxproxymanager_default:
+  nginx-proxy-manager_default:
     external: true
